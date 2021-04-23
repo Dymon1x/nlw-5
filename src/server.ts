@@ -1,4 +1,4 @@
-//setiver os ... na hora de importar as outras bibliotecas, por as tipagens vem separadas, para add -  (yarn add @types/[nome_biblioteca] -D)
+//se tiver os ... na hora de importar as outras bibliotecas, porque as tipagens vem separadas, para add -  (yarn add @types/[nome_biblioteca] -D)
 //-D usado para falar quando  é para desenvolvimento 
 //  yarn add @types/express -D
 // yarn add express
@@ -90,6 +90,8 @@ yarn add @types/uuid -D
 
 import { http } from "./http";
 import "./websocket/client";
+import "./websocket/admin";
+
 
 // app.listen(3333, () => console.log("Server is running on port 3333"));
 http.listen(3333, () => console.log("Server is running on port 3333"));
