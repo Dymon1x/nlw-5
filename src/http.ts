@@ -19,6 +19,10 @@ app.get("/pages/client", (request, response) => {
   return response.render("html/client.html");
 });
 
+app.get("/pages/admin", (request, response) => {
+  return response.render("html/admin.html");
+});
+
 const http = createServer(app); //Criando o protocolo HTTP
 const io = new Server(http);    //Criando o protocolo websocket - deverá instalar o servidor: yarn add socket.io / e instalar o client: yarn add socket.io-client
 
